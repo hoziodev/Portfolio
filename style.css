@@ -624,6 +624,63 @@ section {
     text-align: center;
 }
 
+/* Tableau de synthèse Section */
+.synthese {
+    background: #0a0a0a;
+}
+
+.synthese-card {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.synthese-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.synthese-icon {
+    font-size: 48px;
+    flex-shrink: 0;
+}
+
+.synthese-info {
+    flex: 1;
+}
+
+.synthese-info h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 12px;
+}
+
+.synthese-info p {
+    color: #cccccc;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.synthese-btn {
+    flex-shrink: 0;
+    gap: 8px;
+}
+
+@media (max-width: 768px) {
+    .synthese-card {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
 /* Contact Section */
 .contact-content {
     display: grid;
